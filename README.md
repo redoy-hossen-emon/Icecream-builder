@@ -16,6 +16,7 @@ An interactive and fun web app that lets users build their own custom ice cream 
 
 ## 📸 Preview
 https://github.com/redoy-hossen-emon/Icecream-builder/blob/main/Screenshot_1.png
+
 https://github.com/redoy-hossen-emon/Icecream-builder/blob/main/Screenshot_2.png
 
 
