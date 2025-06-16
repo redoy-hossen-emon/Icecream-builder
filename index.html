@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,shrink-to-fit=no"
+    />
+    <link rel="shortcut icon" href="images/logo.svg" />
+    <title>Ice Cream Sundae</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="react" id="layout">
+      <!-- header start -->
+      <header>
+        <div class="container react" id="header">
+          <div>
+            <img class="logo" src="images/logo.svg" alt="Logo" />
+          </div>
+          <div class="alert"> </div>
+          <div class="textRight">
+            <img src="images/cherry.png" alt="React" class="reactLogo" /><strong
+              >Cherry</strong
+            >
+          </div>
+        </div>
+      </header>
+      <!-- header end -->
+
+      <!-- body start -->
+      <div class="mainBody react" id="body">
+        <div class="container react" id="iceCreamBuilder">
+          <!-- icecream start -->
+          <div>
+            <div class="icecream react" id="icecream">
+              <p class="cone"></p>
+              <!-- <p>Please start adding scoops</p> -->
+              <!-- <div class="scoop chocolate"></div>
+              <div class="scoop vanilla"></div>
+              <div class="scoop orange"></div>
+              <div class="scoop strawberry"></div>
+              <div class="scoop chocolate"></div>
+              <div class="scoop vanilla react" id="scoop"></div>
+              <div class="scoop lemon"></div> -->
+              <!-- <div class="cherry"></div> -->
+            </div>
+          </div>
+          <!-- ice cream end -->
+
+          <!-- builder start -->
+          <div class="react" id="builder">
+            <div class="builder">
+              <h3>Build your own Ice Cream Sundae</h3>
+              <!-- items start -->
+              <div class="react" id="items">
+                <ul>
+                  <!-- item start -->
+                  <li class="react item" id="item">
+                    <span>Vanilla</span>
+                    <span class="quantity">0</span>
+                    <div class="right">
+                      <button type="button" data-type="vanilla" class="plus rounded">+</button>
+                      <button type="button" data-type="vanilla" class="minus rounded">-</button>
+                      <span class="price">45</span>
+                    </div>
+                  </li>
+                  <!-- item end -->
+
+                  <li class="item">
+                    <span>Chocolate</span>
+                     <span class="quantity">0</span>
+                    <div class="right">
+                      <button type="button" data-type="chocolate" class="plus rounded">+</button>
+                      <button type="button" data-type="chocolate" class="minus rounded">-</button>
+                      <span class="price">50</span>
+                    </div>
+                  </li>
+
+                  <li class="item">
+                    <span>Strawberry</span>
+                     <span class="quantity">0</span>
+                    <div class="right">
+                      <button type="button" data-type="strawberry" class="plus rounded">+</button>
+                      <button type="button" data-type="strawberry" class="minus rounded">-</button>
+                      <span class="price">60</span>
+                    </div>
+                  </li>
+
+                  <li class="item">
+                    <span>Orange</span>
+                     <span class="quantity">0</span>
+                    <div class="right">
+                      <button type="button" data-type="orange" class="plus rounded">+</button>
+                      <button type="button" data-type="orange" class="minus rounded">-</button>
+                      <span class="price">35</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- items end -->
+
+              <!-- total price start -->
+              <div class="total react" id="total">
+                <div>Total Price</div>
+                <div class="totalprice">0</div>
+              </div>
+              <!-- total price end -->
+              <button type="button"  class="order rounded">
+                Add to Cart
+              </button>
+            </div>
+
+            <!-- modal start -->
+            <div class="react" id="modal">
+              <div class="backdrop" ></div>
+              <div class="modalBody">
+                <div class="formContainer react" id="orderForm">
+                  <h1>Complete the form below and hit submit</h1>
+                  <form class="orderForm">
+                    <ul>
+                      <li>
+                        <input
+                          type="text"
+                          name="name"
+                          class="fieldStyle fieldSplit alignLeft"
+                          placeholder="Name"
+                        />
+                        <input
+                          type="text"
+                          name="phone"
+                          class="fieldStyle fieldSplit alignRight"
+                          placeholder="Phone no."
+                        />
+                      </li>
+                      <li>
+                        <input
+                          type="text"
+                          name="email"
+                          class="fieldStyle fieldFull"
+                          placeholder="Email"
+                        />
+                      </li>
+                      <li>
+                        <textarea
+                          name="address"
+                          class="fieldStyle"
+                          placeholder="Address"
+                        ></textarea>
+                      </li>
+                      <li>
+                        <input type="submit" value="Submit Order" />
+                      </li>
+                    </ul>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- modal end -->
+          </div>
+          <!-- builder end -->
+        </div>
+      </div>
+      <!-- body end -->
+
+      <!-- footer start -->
+      <footer>
+        <div class="container react" id="footer">
+          <div>
+            Copyright &copy;2020.
+          </div>
+          <div class="textRight">
+            Built with <span class="red">&hearts;</span> by
+            <a
+              href="https://reactjs.org/docs/create-a-new-react-app.html"
+              target="_blank"
+              >Create React App</a
+            >
+          </div>
+        </div>
+      </footer>
+      <!-- footer end -->
+    </div>
+
+    <script src="script.js"> </script>
+  </body>
+</html>
